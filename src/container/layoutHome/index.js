@@ -74,9 +74,11 @@ page.append(choise)
 const createPost = () => {
   // створимо елемент з тегом main а класом post__list
   const postList = createElement('main', 'post__list')
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // створимо елемент з тегом imgа НЕЗНАЮ ЯК ДОДАТИ SRC!!!!!!!!!!!!!!!!!!!!!!!!!
-  const postImage = createElement('img')
+
+  // створимо елемент з тегом img та класом post button
+  const postImage = createElement('img', 'post button')
+  // Додаємо до postImage src
+  postImage.src = '/img/communitie.png'
   //  додамо postImage до елемента postList за допомогою append()
   // append() - Це вбудована функція, яка додає дочірній елемент до
   // батьківського елемента в кінець
